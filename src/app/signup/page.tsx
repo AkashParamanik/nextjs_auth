@@ -20,7 +20,8 @@ export default function SignupPage() {
       const response = await axios.post("api/users/signup", user);
       console.log("toast");
 
-      toast.success("Signup Success");
+      toast.success("Verification Email sent");
+
       console.log("Signup success", response.data);
 
       router.push("/login");
